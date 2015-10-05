@@ -1,0 +1,302 @@
+<html>
+	<head>
+		<title>Which TCWTU Character...</title>
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="extlibs/fastclick/lib/fastclick.js"></script>
+		<script src="zInput.js"></script>
+		<script>
+			$(function(){
+				$("input[name='css_selector']").change(function(){
+					$newStyle = $(this).attr("value");
+					$('#stylesheet').attr("href", $newStyle);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="title">
+			<h1>Which <i>The Crows Will Tell Us</i> Character are you?</h1>
+		</div>
+		<div id="app">
+			<form  id="form1" action=" "/>
+				<div id="affected">
+					<div id="question_1">
+						<div id="question">
+							<h2>What do you like to do in your free time?</h2>
+						</div>
+						<input type="radio" name="q1" id="young" title="Curl up with a good book and a cup of tea." value="1" /><br>
+						<input type="radio" name="q1" id="mid" title="Go out and spend time with friends." value="2" /><br>
+						<input type="radio" name="q1" id="old" title="Anything, so long as I'm not cooped up in my house." value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv();hideDiv()" />
+						<script>
+							function showDiv() {
+								document.getElementById('question_2').style.display = "block";
+							}
+							function hideDiv() {
+								document.getElementById('question_1').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_2">
+						<div id="question">
+							<h2>Which of these colors do you prefer?</h2>
+						</div>
+						<input type="radio" name="q2" id="party" title="Yellow." value="1" /><br>
+						<input type="radio" name="q2" id="rock" title="Purple." value="2" /><br>
+						<input type="radio"  name="q2"id="beer" title="Green." value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv2();hideDiv2()" />
+						<script>
+							function showDiv2() {
+								document.getElementById('question_3').style.display = "block";
+							}
+							function hideDiv2() {
+								document.getElementById('question_2').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_3">
+						<div id="question">
+							<h2>How do you show your friends you care about them?</h2>
+						</div>
+						<input type="radio" name="q3" title="Lavish them in gifts." id="rock2" value="1" /><br>
+						<input type="radio" name="q3" title="Spend time with them." id="indie" value="2" /><br>
+						<input type="radio" name="q3" title="Tease them mercilessly." id="country" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv3();hideDiv3()" />
+						<script>
+							function showDiv3() {
+								document.getElementById('question_4').style.display = "block";
+							}
+							function hideDiv3() {
+								document.getElementById('question_3').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_4">
+						<div id="question">
+							<h2>Which of these animals is your favorite?</h2>
+						</div>
+						<input type="radio" name="q4" title="Horses." id="one" value="1" /><br>
+						<input type="radio" name="q4" title="Dogs." id="two" value="2" /><br>
+						<input type="radio" name="q4" title="Foxes." id="three" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv4();hideDiv4()" />
+						<script>
+							function showDiv4() {
+								document.getElementById('question_5').style.display = "block";
+							}
+							function hideDiv4() {
+								document.getElementById('question_4').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_5">
+						<div id="question">
+							<h2>What scares you?</h2>
+						</div>
+						<input type="radio" name="q5" title="Uncertainty." id="four" value="1" /><br>
+						<input type="radio" name="q5" title="Failure." id="five" value="2" /><br>
+						<input type="radio" name="q5" title="Obscurity." id="six" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv5();hideDiv5()" />
+						<script>
+							function showDiv5() {
+								document.getElementById('question_6').style.display = "block";
+							}
+							function hideDiv5() {
+								document.getElementById('question_5').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_6">
+						<div id="question">
+							<h2>Which of these things would you most hate to be called?</h2>
+						</div>
+						<input type="radio" name="q6" title="Selfish." id="seven" value="1" /><br>
+						<input type="radio" name="q6" title="Cruel." id="eight" value="2" /><br>
+						<input type="radio" name="q6" title="Ordinary." id="nine" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv6();hideDiv6()" />
+						<script>
+							function showDiv6() {
+								document.getElementById('question_7').style.display = "block";
+							}
+							function hideDiv6() {
+								document.getElementById('question_6').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_7">
+						<div id="question">
+							<h2>A road diverges into three paths. Which do you take?</h2>
+						</div>
+						<input type="radio" name="q7" title="The path through the trees. It's sunny and peaceful, with no one around to break the quiet." id="ten" value="1" /><br>
+						<input type="radio" name="q7" title="The path through the city. The market is bustling and there are people everywhere." id="eleven" value="2" /><br>
+						<input type="radio" name="q7" title="The path along the city outskirts. The street is lined with houses and few people can be seen." id="twelve" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv7();hideDiv7()" />
+						<script>
+							function showDiv7() {
+								document.getElementById('question_8').style.display = "block";
+							}
+							function hideDiv7() {
+								document.getElementById('question_7').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_8">
+						<div id="question">
+							<h2>Morning, afternoon, or night?</h2>
+						</div>
+						<input type="radio" name="q8" title="Morning." id="thirteen" value="1" /><br>
+						<input type="radio" name="q8" title="Afternoon." id="fourteen" value="2" /><br>
+						<input type="radio" name="q8" title="Night." id="fifteen" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv8();hideDiv8()" />
+						<script>
+							function showDiv8() {
+								document.getElementById('question_9').style.display = "block";
+							}
+							function hideDiv8() {
+								document.getElementById('question_8').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_9">
+						<div id="question">
+							<h2>You see someone who's been assaulted. What do you do?</h2>
+						</div>
+						<input type="radio" name="q9" title="Make sure they're okay, take them to see a doctor, and let them stay with you if they need it." id="sixteen" value="1" /><br>
+						<input type="radio" name="q9" title="Make sure they're okay, then escort them somewhere safe." id="seventeen" value="2" /><br>
+						<input type="radio" name="q9" title="Keep walking; it's none of your business." id="eighteen" value="3" /><br>
+						<input type="button" name="answer" id="next" value="Next Question" onclick="showDiv9();hideDiv9()" />
+						<script>
+							function showDiv9() {
+								document.getElementById('question_10').style.display = "block";
+							}
+							function hideDiv9() {
+								document.getElementById('question_9').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="question_10">
+						<div id="question">
+							<h2>How do you want to be remembered?</h2>
+						</div>
+						<input type="radio" name="q10" title="Compassionate." id="nineteen" value="1" /><br>
+						<input type="radio" name="q10" title="Loyal." id="twenty" value="2" /><br>
+						<input type="radio" name="q10" title="Skilled." id="twentyone" value="3" /><br>
+						<input type="submit" value="Submit" id="submit" onclick="showresults();hidequiz()" />
+						<script>
+							function showresults() {
+								document.getElementById('results').style.display = "block";
+							}
+							function hidequiz() {
+								document.getElementById('question_10').style.display = "none";
+							}
+						</script>
+					</div>
+					<div id="results">
+						<h2 id="answer2"></h2>
+						<p id="answer1"></p>
+						<p id="answer"></p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script>
+			$(function() {
+				FastClick.attach(document.body);
+			});
+			$("#affected").zInput();
+		</script>
+		<script>
+		   q1var = ['young', 'mid', 'old'];
+		   q2var = ['party', 'rock', 'beer'];
+		   q3var = ['rock2', 'indie', 'country'];
+		   q4var = ['one', 'two', 'three'];
+		   q5var = ['four', 'five', 'six'];
+		   q6var = ['seven', 'eight', 'nine'];
+		   q7var = ['ten', 'eleven', 'twelve'];
+		   q8var = ['thirteen', 'fourteen', 'fifteen'];
+		   q9var = ['sixteen', 'seventeen', 'eighteen'];
+		   q10var = ['nineteen', 'twenty', 'twentyone'];
+		
+		   document.getElementById("form1").onsubmit=function() {
+		   for(i=0; i<q1var.length; i++) {
+		   if (document.getElementById(q1var[i]).checked) {
+		   q1 = document.getElementById(q1var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q2var.length; i++) {
+		   if (document.getElementById(q2var[i]).checked) {
+		   q2 = document.getElementById(q2var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q3var.length; i++) {
+		   if (document.getElementById(q3var[i]).checked) {
+		   q3 = document.getElementById(q3var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q4var.length; i++) {
+		   if (document.getElementById(q4var[i]).checked) {
+		   q4 = document.getElementById(q4var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q5var.length; i++) {
+		   if (document.getElementById(q5var[i]).checked) {
+		   q5 = document.getElementById(q5var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q6var.length; i++) {
+		   if (document.getElementById(q6var[i]).checked) {
+		   q6 = document.getElementById(q6var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q7var.length; i++) {
+		   if (document.getElementById(q7var[i]).checked) {
+		   q7 = document.getElementById(q7var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q8var.length; i++) {
+		   if (document.getElementById(q8var[i]).checked) {
+		   q8 = document.getElementById(q8var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q9var.length; i++) {
+		   if (document.getElementById(q9var[i]).checked) {
+		   q9 = document.getElementById(q9var[i]).value; 
+		   }
+		   }//end for
+		   
+		   for(i=0; i<q10var.length; i++) {
+		   if (document.getElementById(q10var[i]).checked) {
+		   q10 = document.getElementById(q10var[i]).value; 
+		   }
+		   }//end for
+		   
+		   all = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5) + parseInt(q6) + parseInt(q7) + parseInt(q8) + parseInt(q9) + parseInt(q10);
+		   var num = 3;
+		   total = (all / num);
+		   document.getElementById("answer").innerHTML = total;
+		   
+				if(total < 5.5) {
+			document.getElementById("answer2").innerHTML = "You got Garisine!";
+			document.getElementById("answer1").innerHTML = "<img src='garisine.png' align='right' width='150px' id='resultsimg'>You are Garisine Relor, the kindhearted, yet shrewd businesswoman who hires Kaslen's services to recover the deed to a mine stolen from her. You're a bit of an introvert, and you often find that you prefer books to people. Still, you know how to get things done when they need doing, and when people make the mistake of underestimating you, they quickly see the error of their ways. You care deeply about inequality in any form, and you take steps whenever you can to right it. Whatever assets you have in your life you love to share, both with the people you love and the people who most need it.<br><br><a id='retake' href='javascript:window.location.reload();'>Take the Test Again</a>"
+			}			
+				if(total >=5.5 && total < 7) {
+			document.getElementById("answer2").innerHTML = "You got Anjorn!";
+			document.getElementById("answer1").innerHTML = "<img src='anjorn.png' align='right' width='150px' id='resultsimg'>You are Anjorn Ysvir, a mercenary under employ of Garisine Relor and operating partner of Kaslen Arden in her task to steal back the deed to a mine. You're generally a laid-back kind of person, someone who's good at rolling with the punches and taking life as it comes. You love spending time with your friends, whom you care greatly for and consider to be the brightest part of your life. You can be somewhat passive, preferring to let other people lead and simply to follow, but you're as loyal as they come, and you try hard to do good. Doing the right thing doesn't always come naturally to you, but it's something you're willing to work towards every single day.<br><br><a id='retake' href='javascript:window.location.reload();'>Take the Test Again</a>";
+			}			
+				if(total >=7) {
+			document.getElementById("answer2").innerHTML = "You got Kaslen!";
+			document.getElementById("answer1").innerHTML = "<img src='kaslen.png' align='right' width='150px' id='resultsimg'>You are Kaslen Arden, one of the best professional thieves in the province, otherwise known as the Carrion. You are shrewd and calculating, with a quick mind and a quicker wit, and you keep people at a distance to protect yourselves. You don't make friends often, preferring to operate under the more formal status of acquaintances, but on the rare occasion that you do make friends, you make friends for life. Your loyalty is hard-won, and at times you can be self-serving, but at the end of the day you come through for your friends when they need you most.<br><br><a id='retake' href='javascript:window.location.reload();'>Take the Test Again</a>";
+			}		
+				return false; // required to not refresh the pq1; just leave this here
+				}// end the submit function
+		</script>
+	</body>
+</html>
